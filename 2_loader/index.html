@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .loader {
+        margin: 0 auto;
+        border: 20px dotted lightseagreen;
+        /* border-top: 20px solid lightseagreen;
+        border-bottom: 20px solid lightgray;
+        border-right: 20px solid lightgray;
+        border-left: 20px solid lightgray; */
+        border-radius: 100%;
+      }
+
+      .loader {
+        height: 80px;
+        width: 80px;
+        animation: chargement 1.6s linear infinite;
+        margin-top: 100px;
+        padding: 20px;
+      }
+
+      @keyframes chargement {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <!-- <div class="loader"><div class="sub-loader"></div></div> -->
+    <div class="loader"></div>
+  </body>
+</html>
